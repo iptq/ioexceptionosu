@@ -30,7 +30,7 @@
         </div>
         <script type="text/javascript">
             $(document).ready(function() {
-                $.get("http://cors.io/spreadsheets.google.com/feeds/list/1kukJCky1iQJfvzEAMCGGtkYy9rOBXlj4BsiEAqKSXCU/od6/public/values", function(result) {
+                $.get("https://cors-anywhere.herokuapp.com/https://spreadsheets.google.com/feeds/list/1kukJCky1iQJfvzEAMCGGtkYy9rOBXlj4BsiEAqKSXCU/od6/public/values", function(result) {
                     var data = $.parseXML(result);
                     console.log(data);
                 });
