@@ -30,11 +30,9 @@
         </div>
         <script type="text/javascript">
             $(document).ready(function() {
-                $.get("http://cors.io/docs.google.com/spreadsheets/d/1kukJCky1iQJfvzEAMCGGtkYy9rOBXlj4BsiEAqKSXCU/pub?gid=197296628&single=true&output=csv", function(result) {
-                    console.log(result);
-                });
-                $.get("http://cors.io/docs.google.com/spreadsheets/d/1kukJCky1iQJfvzEAMCGGtkYy9rOBXlj4BsiEAqKSXCU/pub?gid=0&single=true&output=csv", function(result) {
-                    console.log(result);
+                $.get("http://cors.io/spreadsheets.google.com/feeds/list/1kukJCky1iQJfvzEAMCGGtkYy9rOBXlj4BsiEAqKSXCU/od6/public/values", function(result) {
+                    var data = $.parseXML(result);
+                    console.log(data);
                 });
             });
         </script>
